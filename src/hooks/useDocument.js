@@ -24,7 +24,7 @@ export const useDocument = (collection, id) => {
         })
 
         return () => unsubscribe()
-    }, [collection])
+    }, [collection, id])
 
     return { document, error }
 }
